@@ -9,7 +9,10 @@ const navItems = [nav1, nav2, nav3, nav4, nav5];
 
 function navAnimation(direction1, direction2) {
   navItems.forEach((nav, id) => {
-    nav.classList.replace(`slide-${direction1}-${id + 1}`);
+    nav.classList.replace(
+      `slide-${direction1}-${id + 1}`,
+      `slide-${direction2}-${id + 1}`
+    );
   });
 }
 function toggleNav() {
